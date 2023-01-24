@@ -86,29 +86,234 @@
     </nav>
   </header>
 
-  <section class="container-full-height">
-    <div class="container bg-dark login-panel text-light mt-5">
-      <div class="login-content">
-        <p class="fs-2">Iniciar sesión</p>
-        <p class="text-end">
-          <a class="text-light" href="#">¿Olvidaste tu contraseña?</a>
-        </p>
-        <form>
-          <div class="row">
-            <div class="col-sm-12 col-lg-6 mt-3">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario">
+  <!-- ============================================================================== -->
+  <!-- Panel agregar diplomado -->
+  <section class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <form action="">
+            <div class="card panel-card mb-5 shadow-sm">
+              <div class="card-header bg-dark">
+                <div class="row">
+                  <div class="col-sm-5 col-lg-3 d-flex align-items-center">
+                    <p class="text-primary text-uppercase fw-bold fs-6">agregar diplomado</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+
+                <div class="row mb-3">
+                  <div class="col-sm-12 col-lg-3 mb-3">
+                    <label class="text-capitalize" for="">Activo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col-sm-12 col-lg-6 mb-3">
+                    <label class="text-capitalize" for="">Diplomado</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col-sm-12 col-lg-3 mb-3">
+                    <label class="text-capitalize" for="">costo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-sm-12 col-lg-6 mb-3">
+                    <label for="exampleFormControlTextarea1" class="text-capitalize form-label">bienvenida-título</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="col-sm-12 col-lg-6 mb-3">
+                    <label for="exampleFormControlTextarea1" class="text-capitalize form-label">sumario-texto</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-sm-12 col-lg-6 mb-3">
+                    <label for="exampleFormControlTextarea1" class="text-capitalize form-label">imagen-bienvenida</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="col-sm-12 col-lg-6 mb-3">
+                    <label for="exampleFormControlTextarea1" class="text-capitalize form-label">texto-bienvenida</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-sm-12">
+                    <label for="exampleFormControlTextarea1" class="text-capitalize form-label">subtítulo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-sm-12 col-lg-5 mb-3">
+                    <label class="text-capitalize" for="">Tema</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col-sm-12 col-lg-2 mb-3">
+                    <label class="text-capitalize" for="">inicio</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col-sm-12 col-lg-5 mb-3">
+                    <label class="text-capitalize" for="">duración</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-12 col-lg-6 mt-3">
-              <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="contraseña">
+
+            <div class="card panel-card mb-5 shadow-sm">
+              <div class="card-header bg-dark">
+                <span class="text-capitalize text-light">Propiedades</span>
+              </div>
+              <div class="card-body">
+                <button class="btn btn-primary mb-3">agregar</button>
+
+                <div class="row row-group mb-3">
+                  <div class="col-sm-12 col-lg-5 mb-3">
+                    <label for="" class="text-capitalize">componente</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Objetivo del diplomado"></textarea>
+                  </div>
+                  <div class="col-sm-12 col-lg-5 mb-3">
+                    <label for="" class="text-capitalize">descripción</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Adquieres las habilidades..."></textarea>
+                  </div>
+                  <div class="col-sm-12 col-lg-2 d-flex align-items-end mb-3">
+                    <button class="btn btn-primary btn-full-width">Eliminar</button>
+                  </div>
+                </div>
+
+                <div class="row row-group mb-3">
+                  <div class="col-sm-12 col-lg-5 mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¿Por que estudiar?"></textarea>
+                  </div>
+                  <div class="col-sm-12 col-lg-5 mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="En el mundo laboral"></textarea>
+                  </div>
+                  <div class="col-sm-12 col-lg-2 d-flex align-items-end mb-3">
+                    <button class="btn btn-primary btn-full-width">Eliminar</button>
+                  </div>
+                </div>
+
+                <div class="row row-group mb-3">
+                  <div class="col-sm-12 col-lg-5 mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Temáticas"></textarea>
+                  </div>
+                  <div class="col-sm-12 col-lg-5 mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="+ Análisis financiero"></textarea>
+                  </div>
+                  <div class="col-sm-12 col-lg-2 d-flex align-items-end mb-3">
+                    <button class="btn btn-primary btn-full-width">Eliminar</button>
+                  </div>
+                </div>
+
+                <div class="row row-group mb-3">
+                  <div class="col-sm-12 col-lg-5 mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Campo laboral"></textarea>
+                  </div>
+                  <div class="col-sm-12 col-lg-5 mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Despúes de cursar"></textarea>
+                  </div>
+                  <div class="col-sm-12 col-lg-2 d-flex align-items-end mb-3">
+                    <button class="btn btn-primary btn-full-width">Eliminar</button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="mt-4 d-flex justify-content-end">
-            <button class="btn btn-primary" type="button">Ingresar</button>
-          </div>
-        </form>
+
+            <div class="card panel-card mb-5 shadow-sm">
+              <div class="card-header bg-dark">
+                <span class="text-capitalize text-light">composición curso</span>
+              </div>
+              <div class="card-body">
+                <button class="btn btn-primary mb-3">agregar</button>
+                <div class="row row-group mb-3">
+                  <div class="col-sm-12 col-lg-3 mb-3">
+                    <span class="fw-bold d-block mb-2">Componente</span>
+                    <div class="btn-group btn-full-width">
+                      <button class="btn btn-primary btn-lg dropdown-toggle text-uppercase d-flex justify-content-between align-items-center fw-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        microcurso
+                        <img src="assets/image/shared/icons/icon-chevron-down-white.svg" alt="icon">
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu--fullwidth">
+                        <li><a class="dropdown-item" href="#"><span>microcurso</span></a></li>
+                        <li><a class="dropdown-item" href="#"><span>módulo</span></a></li>
+                        <li><a class="dropdown-item" href="#"><span>MOOC</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-7 mb-3">
+                    <span class="d-block text-capitalize fw-bold mb-2">Descripción</span>
+                    <input type="text" class="form-control" placeholder="texto">
+                  </div>
+                  <div class="col-sm-12 col-lg-2 d-flex align-items-end mb-3">
+                    <button class="btn btn-primary btn-full-width">Eliminar</button>
+                  </div>
+                </div>
+
+                <div class="row row-group mb-3">
+                  <div class="col-sm-12 col-lg-3 mb-3">
+                    <span class="fw-bold d-block d-sm-block d-lg-none mb-2">Componente</span>
+                    <div class="btn-group btn-full-width">
+                      <button class="btn btn-primary btn-lg dropdown-toggle text-uppercase d-flex justify-content-between align-items-center fw-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        microcurso
+                        <img src="assets/image/shared/icons/icon-chevron-down-white.svg" alt="icon">
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu--fullwidth">
+                        <li><a class="dropdown-item" href="#"><span>microcurso</span></a></li>
+                        <li><a class="dropdown-item" href="#"><span>módulo</span></a></li>
+                        <li><a class="dropdown-item" href="#"><span>MOOC</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-7 mb-3">
+                    <span class="d-block text-capitalize fw-bold d-sm-block d-lg-none mb-2">Descripción</span>
+                    <input type="text" class="form-control" placeholder="texto">
+                  </div>
+                  <div class="col-sm-12 col-lg-2 d-flex align-items-end mb-3">
+                    <button class="btn btn-primary btn-full-width">Eliminar</button>
+                  </div>
+                </div>
+
+                <div class="row row-group mb-3">
+                  <div class="col-sm-12 col-lg-3 mb-3">
+                    <span class="fw-bold d-block d-sm-block d-lg-none mb-2">Componente</span>
+                    <div class="btn-group btn-full-width">
+                      <button class="btn btn-primary btn-lg dropdown-toggle text-uppercase d-flex justify-content-between align-items-center fw-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        microcurso
+                        <img src="assets/image/shared/icons/icon-chevron-down-white.svg" alt="icon">
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu--fullwidth">
+                        <li><a class="dropdown-item" href="#"><span>microcurso</span></a></li>
+                        <li><a class="dropdown-item" href="#"><span>módulo</span></a></li>
+                        <li><a class="dropdown-item" href="#"><span>MOOC</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-7 mb-3">
+                    <span class="d-block text-capitalize fw-bold d-sm-block d-lg-none mb-2">Descripción</span>
+                    <input type="text" class="form-control" placeholder="texto">
+                  </div>
+                  <div class="col-sm-12 col-lg-2 d-flex align-items-end mb-3">
+                    <button class="btn btn-primary btn-full-width">Eliminar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end mt-5 mb-5">
+              <button class="btn btn-primary">Guardar</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
 
   <footer class="footer">
     <div class="container footer-content">

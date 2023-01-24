@@ -86,29 +86,194 @@
     </nav>
   </header>
 
-  <section class="container-full-height">
-    <div class="container bg-dark login-panel text-light mt-5">
-      <div class="login-content">
-        <p class="fs-2">Iniciar sesión</p>
-        <p class="text-end">
-          <a class="text-light" href="#">¿Olvidaste tu contraseña?</a>
-        </p>
-        <form>
-          <div class="row">
-            <div class="col-sm-12 col-lg-6 mt-3">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario">
-            </div>
-            <div class="col-sm-12 col-lg-6 mt-3">
-              <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="contraseña">
-            </div>
+  <!-- ============================================================================== -->
+  <!-- Dropdowns navbar -->
+  <section>
+    <div class="container">
+      <div class="row dropdown-nav">
+        <div class="col-sm-12 col-lg-3 mt-3">
+          <div class="btn-group">
+            <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              usuarios
+              <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Items para este dropdown -->
+            </ul>
           </div>
-          <div class="mt-4 d-flex justify-content-end">
-            <button class="btn btn-primary" type="button">Ingresar</button>
+        </div>
+        <div class="col-sm-12 col-lg-3 mt-3">
+          <div class="btn-group">
+            <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              cobranza
+              <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><span>Recibo</span></a></li>
+              <li><a class="dropdown-item" href="#"><span>Facturas</span></a></li>
+              <li><a class="dropdown-item" href="#"><span>Notas de crédito</span></a></li>
+            </ul>
           </div>
-        </form>
+        </div>
+        <div class="col-sm-12 col-lg-3 mt-3">
+          <div class="btn-group">
+            <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              atención a clientes
+              <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><span>Consulta</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-3 mt-3">
+          <div class="btn-group">
+            <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              configuración
+              <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-capitalize" href="#"><span>Roles</span></a></li>
+              <li><a class="dropdown-item text-capitalize" href="#"><span>Permisos</span></a></li>
+              <li><a class="dropdown-item text-capitalize" href="#"><span>Usuarios</span></a></li>
+              <li><a class="dropdown-item text-capitalize" href="#"><span>Series fiscales</span></a></li>
+              <li><a class="dropdown-item text-capitalize" href="#"><span>Alianzas</span></a></li>
+              <li><a class="dropdown-item text-capitalize" href="#"><span>diplomado</span></a></li>
+              <li><a class="dropdown-item text-capitalize" href="#"><span>experto</span></a></li>
+              <li><a class="dropdown-item text-capitalize" href="#"><span>institución</span></a></li>
+              <li><a class="dropdown-item text-capitalize" href="#"><span>tipo de curso</span></a></li>
+              <li><a class="dropdown-item text-capitalize" href="#"><span>cursos</span></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- Panel -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card panel-card mb-5 shadow-sm">
+            <div class="card-header bg-dark">
+              <p class="text-primary text-uppercase fw-bold">Notas de credito</p>
+            </div>
+            <div class="card-body">
+              <form action="">
+                <div class="row mb-3">
+                  <div class="col-sm-12 col-lg-6 mb-3">
+                    <div class="row d-flex align-items-center">
+                      <label for="inputName" class="col-sm-2 col-form-label text-capitalize fw-bold">Nombre</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputName">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-6 mb-3">
+                    <div class="row d-flex align-items-center">
+                      <label for="inputEmail" class="col-sm-2 col-form-label text-capitalize fw-bold">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-lg-6 mb-3">
+                    <div class="row mb-3 d-flex align-items-center">
+                      <label for="inputEmail3" class="col-sm-4 col-form-label text-capitalize fw-bold">Fecha de adquisición</label>
+                      <div class="col-sm-4">
+                        <input type="date" class="form-control" id="inputEmail3" />
+                      </div>
+                      <div class="col-sm-4">
+                        <input type="date" class="form-control" id="inputEmail3" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-6 mb-3">
+                    <div class="row">
+                      <div class="col-sm-6 mb-3">
+                        <div class="row d-flex align-items-center">
+                          <label for="inputEmail3" class="col-sm-3 col-form-label text-capitalize fw-bold">serie</label>
+                          <div class="col-sm-9">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Serie</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="row mb-3 d-flex align-items-center">
+                          <label for="inputEmail3" class="col-sm-3 col-form-label text-capitalize fw-bold">folio</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="folio">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <div>
+                    <button class="btn btn-primary d-none">crear</button>
+                    <button class="btn btn-primary">Buscar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- Table -->
+  <section class="d-none">
+    <div class="container">
+      <table class="table shadow-sm">
+        <thead class="table-dark">
+          <tr class="text-capitalize">
+            <th></th>
+            <th scope="col">folio</th>
+            <th scope="col">fecha</th>
+            <th scope="col">razón social</th>
+            <th scope="col">total</th>
+            <th scope="col">estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-capitalize">
+            <td><a href="#" class="text-bg-warning ps-3 pe-3 pt-1 pb-1 me-2 text-capitalize">detalle</a></td>
+            <td>9999</td>
+            <td><span>31 de marzo 2021</span></td>
+            <td><span>aaaaaaaaaa</span></td>
+            <td><span>$ 13,500</span></td>
+            <td><span>activa</span></td>
+          </tr>
+          <tr>
+            <td><a href="#" class="text-bg-warning ps-3 pe-3 pt-1 pb-1 me-2 text-capitalize">detalle</a></td>
+            <td>9999</td>
+            <td><span>31 de marzo 2021</span></td>
+            <td><span>aaaaaaaaaa</span></td>
+            <td><span>$ 13,500</span></td>
+            <td><span class="text-primary">Cancelada</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
 
   <footer class="footer">
     <div class="container footer-content">

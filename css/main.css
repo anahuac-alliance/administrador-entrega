@@ -10875,6 +10875,10 @@ body {
   text-transform: uppercase;
 }
 
+.btn-full-width {
+  width: 100%;
+}
+
 .btn-lg, .btn-group-lg > .btn {
   --bs-btn-border-radius: $dropdown-border-radius;
 }
@@ -10920,7 +10924,6 @@ body {
 }
 
 /* Dropdown */
-/* Dropdown */
 .dropdown-toggle {
   color: var(--bs-white);
 }
@@ -10931,9 +10934,13 @@ body {
   border-top: 0;
   color: var(--bs-warning);
   content: "";
-  display: inline-block;
+  display: none;
   margin-left: initial;
   vertical-align: initial;
+}
+
+.dropdown-menu.dropdown-menu--fullwidth {
+  width: 100%;
 }
 
 /* Outline buttons */
@@ -10967,6 +10974,31 @@ body {
     font-size: 1.8rem;
     height: 70px;
     width: 70px;
+  }
+}
+
+.row-group {
+  border: 1px solid var(--bs-gray-300);
+  border-radius: 3px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+@media (min-width: 992px) {
+  .row-group {
+    border: 0;
+    padding: initial;
+  }
+}
+
+.container-full-height {
+  margin-top: 50px;
+}
+@media (min-width: 992px) {
+  .container-full-height {
+    margin-top: 0px;
+    height: calc(100vh - 255px - 65px);
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -11081,6 +11113,18 @@ body {
 /* Styles for show password button */
 input.form-control[type=password] + button img {
   width: 20px;
+}
+
+.profile-picture-view {
+  width: 84px;
+  height: 84px;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+}
+.profile-picture-view img {
+  display: block;
+  width: 100%;
 }
 
 .modal-header {
@@ -11293,16 +11337,15 @@ input.form-control[type=password] + button img {
 
 /*============================ Screens ============================*/
 /* Login screen */
-.login-box {
-  height: calc(100vh - 380px);
-}
-.login-box .login-content {
-  padding: 20px 10px;
+.login-panel {
+  height: 300px;
+  padding: 20px;
   box-sizing: border-box;
+  margin-bottom: 50px;
 }
 @media (min-width: 992px) {
-  .login-box .login-content {
-    padding: 20px 30px;
+  .login-panel {
+    margin-bottom: 0;
   }
 }
 
@@ -11357,6 +11400,12 @@ input.form-control[type=password] + button img {
 
 .panel-card {
   --bs-card-border-radius: 0;
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .panel-card {
+    margin-bottom: 0;
+  }
 }
 .panel-card .card-header:first-child {
   border-radius: var(--bs-card-border-radius);
