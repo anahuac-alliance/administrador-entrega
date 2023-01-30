@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ============================================================================== -->
   <!-- ================================= Ubuntu font ================================= -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- ============================================================================== -->
   <!-- ============================================================================== -->
   <title>Administrador</title>
 <script defer src="main.js"></script><link href="css/main.css" rel="stylesheet"></head>
+
 <body>
 
   <header>
@@ -21,7 +25,9 @@
             <a class="navbar-brand" href="/">
               <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza Educativa">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
@@ -34,7 +40,8 @@
             </form>
             <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Cursos
                   <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
                 </a>
@@ -46,7 +53,8 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Te puede interesar
                   <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
                 </a>
@@ -58,10 +66,12 @@
                 </ul>
               </li>
               <li class="nav-item btn-login">
-                <button class="btn btn-info btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</button>
+                <button class="btn btn-info btn-sm btn-custom" data-bs-toggle="modal"
+                  data-bs-target="#loginModal">Iniciar sesión</button>
               </li>
               <li class="nav-item btn-register">
-                <button class="btn btn-primary btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrate</button>
+                <button class="btn btn-primary btn-sm btn-custom" data-bs-toggle="modal"
+                  data-bs-target="#registerModal">Regístrate</button>
               </li>
               <li class="nav-item">
                 <a href="#" class="btn btn-shopping-cart">
@@ -69,7 +79,8 @@
                 </a>
               </li>
               <li class="nav-item dropdown dropdown-user d-none">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   <img src="assets/image/shared/icons/icon-user.svg" alt="Profile icon">
                 </a>
                 <ul class="dropdown-menu">
@@ -86,160 +97,200 @@
     </nav>
   </header>
 
-
-  <!-- ============================================================================== -->
-  <!-- Panel -->
-  <section class="mt-5 mb-5">
-    <div class="container">
-      <div class="row">
-        <form action="">
-
-          <div class="card panel-card mb-4 shadow-sm">
-            <div class="card-header bg-dark">
-              <div class="row">
-                <div class="col-sm-5 col-lg-2 d-flex align-items-center">
-                  <p class="text-primary text-uppercase fw-bold fs-6">agregar experto</p>
-                </div>
-                <div class="col-sm-7 col-lg-3">
-                  <select class="form-select d-inline" aria-label="Default select example">
-                    <option selected>Seleccione Alianza</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <div class="row mb-3">
-                <div class="col-sm-12 col-lg-1 mb-2">
-                  <label for="" class="text-capitalize">Activo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="col-sm-12 col-lg-3 mb-2">
-                  <label for="" class="text-capitalize">Nombre</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="col-sm-12 col-lg-4 mb-2">
-                  <label for="" class="text-capitalize">Apellido paterno</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="col-sm-12 col-lg-4 mb-2">
-                  <label for="" class="text-capitalize">Apellido materno</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col">
-                  <label for="" class="text-capitalize">Reseña</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-sm-12 col-lg-2 d-flex flex-column align-items-center mb-3">
-                  <div class="profile-picture-view">
-                    <img src="assets/image/profile/profile-default.webp" alt="Experto" id="profileViewer">
-                  </div>
-                  <label for="formFileSm" class="form-label">Fotografía experto</label>
-                  <input class="form-control input-file" id="pictureFile" type="file">
-                </div>
-                <div class="col-sm-12 col-lg-10 mb-3">
-                  <label for="" class="text-capitalize">Título profesional</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
+  <main>
+    <!-- ============================================================================== -->
+    <!-- Dropdowns navbar -->
+    <section>
+      <div class="container">
+        <div class="row dropdown-nav">
+          <div class="col-sm-12 col-lg-3 mt-3">
+            <div class="btn-group">
+              <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                usuarios
+                <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
+              </button>
+              <ul class="dropdown-menu">
+                <!-- Items para este dropdown -->
+              </ul>
             </div>
           </div>
-
-          <div class="col">
-            <button class="btn btn-primary">Agregar</button>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-12 col-lg-10 mb-3">
-              <div class="row row-group mt-3">
-                <div class="col-sm-12 col-lg-4 mb-3">
-                  <span>Redes sociales</span>
-                  <div class="btn-group btn-full-width mt-2">
-                    <button class="btn btn-primary btn-lg dropdown-toggle text-uppercase d-flex justify-content-between align-items-center fw-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Redes sociales
-                      <img src="assets/image/shared/icons/icon-chevron-down-white.svg" alt="icon">
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"><span>LinkedIn</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Twitter</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Tik tok</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Facebook</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Youtube</span></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-lg-8 mb-3">
-                  <label for="">URL</label>
-                  <input type="text" class="form-control mt-2">
-                </div>
-              </div>
-
-              <div class="row row-group mt-3">
-                <div class="col-sm-12 col-lg-4 mb-3">
-                  <span class="d-lg-none">Redes sociales</span>
-                  <div class="btn-group btn-full-width mt-2">
-                    <button class="btn btn-primary btn-lg dropdown-toggle text-uppercase d-flex justify-content-between align-items-center fw-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Redes sociales
-                      <img src="assets/image/shared/icons/icon-chevron-down-white.svg" alt="icon">
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"><span>LinkedIn</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Twitter</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Tik tok</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Facebook</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Youtube</span></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-lg-8 mb-3">
-                  <label for="" class="d-lg-none">URL</label>
-                  <input type="text" class="form-control mt-2">
-                </div>
-              </div>
-
-              <div class="row row-group mt-3">
-                <div class="col-sm-12 col-lg-4 mb-3">
-                  <span class="d-lg-none">Redes sociales</span>
-                  <div class="btn-group btn-full-width mt-2">
-                    <button class="btn btn-primary btn-lg dropdown-toggle text-uppercase d-flex justify-content-between align-items-center fw-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Redes sociales
-                      <img src="assets/image/shared/icons/icon-chevron-down-white.svg" alt="icon">
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"><span>LinkedIn</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Twitter</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Tik tok</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Facebook</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Youtube</span></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-lg-8 mb-3">
-                  <label for="" class="d-lg-none">URL</label>
-                  <input type="text" class="form-control mt-2">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-2 mb-3 d-flex align-items-end">
-              <div class="btn btn-primary mb-3 btn-full-width">guardar</div>
+          <div class="col-sm-12 col-lg-3 mt-3">
+            <div class="btn-group">
+              <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                cobranza
+                <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><span>Recibo</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Facturas</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Notas de crédito</span></a></li>
+              </ul>
             </div>
           </div>
-
-        </form>
+          <div class="col-sm-12 col-lg-3 mt-3">
+            <div class="btn-group">
+              <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                atención a clientes
+                <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><span>Consulta</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-3 mt-3">
+            <div class="btn-group">
+              <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                configuración
+                <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-capitalize" href="#"><span>Roles</span></a></li>
+                <li><a class="dropdown-item text-capitalize" href="#"><span>Permisos</span></a></li>
+                <li><a class="dropdown-item text-capitalize" href="#"><span>Usuarios</span></a></li>
+                <li><a class="dropdown-item text-capitalize" href="#"><span>Series fiscales</span></a></li>
+                <li><a class="dropdown-item text-capitalize" href="#"><span>Alianzas</span></a></li>
+                <li><a class="dropdown-item text-capitalize" href="#"><span>diplomado</span></a></li>
+                <li><a class="dropdown-item text-capitalize" href="#"><span>experto</span></a></li>
+                <li><a class="dropdown-item text-capitalize" href="#"><span>institución</span></a></li>
+                <li><a class="dropdown-item text-capitalize" href="#"><span>tipo de curso</span></a></li>
+                <li><a class="dropdown-item text-capitalize" href="#"><span>cursos</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- ============================================================================== -->
-  <!-- ============================================================================== -->
+    </section>
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+
+    <!-- ============================================================================== -->
+    <!-- Panel -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card panel-card mb-5 shadow-sm">
+              <div class="card-header bg-dark">
+                <p class="text-primary text-uppercase fw-bold fs-6">Agregar serie fiscal</p>
+              </div>
+              <div class="card-body">
+                <form action="">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <label for="" class="form-label text-capitalize">Empresa</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <label for="" class="form-label text-capitalize mb-3">Tipo de documento</label>
+
+                  <div class="row row-group mb-2">
+                    <div class="col-12 col-lg-4 mb-3 d-flex align-items-end">
+                      <p class="document-type-heading form-control">facturas</p>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="" class="form-label">Serie</label>
+                      <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="" class="form-label">Folio</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="row row-group mb-2">
+                    <div class="col-12 col-lg-4 mb-3 d-flex align-items-end">
+                      <p class="document-type-heading form-control">Notas de crédito</p>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="" class="form-label d-block d-lg-none">Serie</label>
+                      <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="" class="form-label d-block d-lg-none">Folio</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="row row-group mb-2">
+                    <div class="col-12 col-lg-4 mb-3 d-flex align-items-end">
+                      <p class="document-type-heading form-control">Notas de crédito</p>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="" class="form-label d-block d-lg-none">Serie</label>
+                      <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                      <label for="" class="form-label d-block d-lg-none">Folio</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-primary me-2">buscar</button>
+                    <button class="btn btn-primary">guardar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+
+    <!-- ============================================================================== -->
+    <!-- Table -->
+    <section class="d-none">
+      <div class="container">
+        <table class="table shadow-sm">
+          <thead class="table-dark">
+            <tr class="text-capitalize">
+              <th></th>
+              <th scope="col">folio</th>
+              <th scope="col">fecha</th>
+              <th scope="col">razón social</th>
+              <th scope="col">total</th>
+              <th scope="col">estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-capitalize">
+              <td class="detail"><a href="#" class="text-bg-warning ps-3 pe-3 pt-1 pb-1 me-2 text-capitalize">detalle</a></td>
+              <td>9999</td>
+              <td><span>31 de marzo 2021</span></td>
+              <td><span>aaaaaaaaaa</span></td>
+              <td><span>$ 13,500</span></td>
+              <td><span>activa</span></td>
+            </tr>
+            <tr>
+              <td class="detail"><a href="#" class="text-bg-warning ps-3 pe-3 pt-1 pb-1 me-2 text-capitalize">detalle</a></td>
+              <td>9999</td>
+              <td><span>31 de marzo 2021</span></td>
+              <td><span>aaaaaaaaaa</span></td>
+              <td><span>$ 13,500</span></td>
+              <td><span class="text-primary">Cancelada</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+  </main>
 
   <footer class="footer">
     <div class="container footer-content">
@@ -251,7 +302,8 @@
         <div class="footer-disclamer">
           <img class="d-none d-lg-block" src="assets/image/shared/footer/eonomista-logo.svg" alt="El Economista">
           <div class="disclamer mt-4">
-            <p>Copyright © 1988-2015 Periódico Especializado en Economía y Finanzas, S.A. de C.V. All Rights Reserved. Derechos Reservados.</p>
+            <p>Copyright © 1988-2015 Periódico Especializado en Economía y Finanzas, S.A. de C.V. All Rights Reserved.
+              Derechos Reservados.</p>
             <p>Número de reserva al Título en Derechos de Autor 04-2010-062510353600-203.</p>
             <p>
               Al visitar esta página, usted está de acuerdo con los términos del servicio
@@ -288,7 +340,7 @@
           <div class="footer-contact-items mt-4">
             <div class="footer-contact-items-item">
               <img src="assets/image/shared/footer/footer-icon-phone.svg" alt="Phone">
-              <p><span class="fw-bold">Llámanos</span>  55 5237 0766</p>
+              <p><span class="fw-bold">Llámanos</span> 55 5237 0766</p>
               <p><span class="fw-bold">Interior de la República</span> 800 018 8000</p>
             </div>
             <div class="footer-contact-items-item">
@@ -353,7 +405,8 @@
 
               <div class="row mb-3">
                 <div class="col input-group">
-                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" id="passwordField">
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                    id="passwordField">
                   <button class="btn btn-outline-secondary" type="button" id="showPassword">
                     <img src="assets/image/shared/icons/icon-eye.svg" alt="Show icon">
                   </button>
@@ -400,7 +453,8 @@
               </div>
               <div class="col-sm-12 col-lg-6 mt-3">
                 <div class="col input-group">
-                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" id="passwordField">
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                    id="passwordField">
                   <button class="btn btn-outline-secondary" type="button" id="showPassword">
                     <img src="assets/image/shared/icons/icon-eye.svg" alt="Show icon">
                   </button>
@@ -423,14 +477,19 @@
 
   <!-- ================================================================================ -->
   <!-- ============================= Popper 2.11 ====================================== -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
   <!-- ================================================================================ -->
   <!-- ================================================================================ -->
 
   <!-- ================================================================================ -->
   <!-- =============================Bootstarp 5.2 ===================================== -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
   <!-- ================================================================================ -->
   <!-- ================================================================================ -->
 </body>
+
 </html>

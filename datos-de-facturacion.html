@@ -153,6 +153,12 @@
                 <p>Si en 30 minutos no recibes tu factura favor de contactarnos.</p>
                 <p>Una vez generada la factura no se podrá realizar una refacturación.</p>
                 <p>El reenvío de tu factura se pordrá solicitar hasta dos ocasiones.</p>
+
+                <!-- ============================================================== -->
+                <!-- Boton muestra para lanzar la modal -->
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loadingModal">Emitir factura</button>
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
               </div>
             </div>
           </div>
@@ -336,6 +342,24 @@
         </div>
         <div class="modal-footer justify-content-center">
           <p class="text-center">¿No tienes cuenta? <a href="#" class="link">Crear cuenta</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- ================================ Modal Loading =============================== -->
+  <div class="modal fade" id="loadingModal" tabindex="-1" aria-labelledby="ventanaLoading" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered mdoal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-light text-dark d-flex justify-content-center">
+          <p class="text-primary text-uppercase fs-3 fw-bold mt-5">cargando</p>
+        </div>
+        <div class="modal-body text-primary text-center py-5">
+          <p>Generando su factura</p>
+          <p>No presione el boton <span class="text-uppercase">atrás</span>, o alguna tecla de su computadora.</p>
         </div>
       </div>
     </div>
