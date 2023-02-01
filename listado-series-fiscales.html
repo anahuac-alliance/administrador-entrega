@@ -19,79 +19,62 @@
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <div class="container header-content">
-          <div class="header-branding">
-            <a class="navbar-brand" href="/">
-              <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza Educativa">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex navbar-search" role="search">
-              <button for="" class="btn btn-search">
-                <img src="assets/image/shared/icons/icon-search.svg" alt="Search icon">
-              </button>
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Cursos
-                  <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Todos los cursos</a></li>
-                  <li><a class="dropdown-item" href="#">Administración Financiera</a></li>
-                  <li><a class="dropdown-item" href="#">Inversión</a></li>
-                  <li><a class="dropdown-item" href="#">BBVA</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Te puede interesar
-                  <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Webinar Laboratorio de Soluciones</a></li>
-                  <li><a class="dropdown-item" href="#">Podcast</a></li>
-                  <li><a class="dropdown-item" href="#">Descargas gratuitas</a></li>
-                  <li><a class="dropdown-item" href="#">El Club El Economista</a></li>
-                </ul>
-              </li>
-              <li class="nav-item btn-login">
-                <button class="btn btn-info btn-sm btn-custom" data-bs-toggle="modal"
-                  data-bs-target="#loginModal">Iniciar sesión</button>
-              </li>
-              <li class="nav-item btn-register">
-                <button class="btn btn-primary btn-sm btn-custom" data-bs-toggle="modal"
-                  data-bs-target="#registerModal">Regístrate</button>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="btn btn-shopping-cart">
-                  <img src="assets/image/shared/icons/icon-shopping-cart.svg" alt="Shopping cart icon">
-                </a>
-              </li>
-              <li class="nav-item dropdown dropdown-user d-none">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <img src="assets/image/shared/icons/icon-user.svg" alt="Profile icon">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Webinar Laboratorio de Soluciones</a></li>
-                  <li><a class="dropdown-item" href="#">Podcast</a></li>
-                  <li><a class="dropdown-item" href="#">Descargas gratuitas</a></li>
-                  <li><a class="dropdown-item" href="#">El Club El Economista</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza Educativa">
+        </a>
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="container"></div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursos
+                <img class="ms-2" src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><span>Todos los cursos</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Administración Financiera</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Inversión</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>BVVA</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Te puede interesar
+                <img class="ms-2" src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><span>Webinar Laboratorio de Soluciones</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Podcast</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Descargas Gratuitas</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>El Club El Economista</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon active" aria-current="page" href="#">
+                <img class="icon-notification" src="assets/image/shared/icons/icon-notification.svg" alt="icon">
+                <span class="notification-label">1</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon active" aria-current="page" href="#">
+                <img class="icon-shopping-cart" src="assets/image/shared/icons/icon-shopping-cart.svg" alt="icon">
+                <span class="notification-label">1</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-icon dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="icon-user ms-2" src="assets/image/shared/icons/icon-user.svg" alt="icon">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><span>Salir</span></a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -155,6 +138,7 @@
                 <li><a class="dropdown-item text-capitalize" href="#"><span>institución</span></a></li>
                 <li><a class="dropdown-item text-capitalize" href="#"><span>tipo de curso</span></a></li>
                 <li><a class="dropdown-item text-capitalize" href="#"><span>cursos</span></a></li>
+                <li><a class="dropdown-item text-capitalize" href="#"><span>Badge</span></a></li>
               </ul>
             </div>
           </div>
@@ -190,7 +174,7 @@
 
                   <div class="d-flex justify-content-end">
                     <button class="btn btn-primary me-2">buscar</button>
-                    <button class="btn btn-primary">guardar</button>
+                    <button class="btn btn-primary">agregar</button>
                   </div>
                 </form>
               </div>
@@ -252,8 +236,7 @@
         <div class="footer-disclamer">
           <img class="d-none d-lg-block" src="assets/image/shared/footer/eonomista-logo.svg" alt="El Economista">
           <div class="disclamer mt-4">
-            <p>Copyright © 1988-2015 Periódico Especializado en Economía y Finanzas, S.A. de C.V. All Rights Reserved.
-              Derechos Reservados.</p>
+            <p>Copyright © 1988-2015 Periódico Especializado en Economía y Finanzas, S.A. de C.V. All Rights Reserved. Derechos Reservados.</p>
             <p>Número de reserva al Título en Derechos de Autor 04-2010-062510353600-203.</p>
             <p>
               Al visitar esta página, usted está de acuerdo con los términos del servicio
@@ -286,11 +269,11 @@
           </div>
         </div>
         <div class="footer-contact">
-          <p class="fw-bold text-warning">Tienes duda contáctanos</p>
+          <p class="fw-bold text-warning">¿Tienes duda? contáctanos</p>
           <div class="footer-contact-items mt-4">
             <div class="footer-contact-items-item">
               <img src="assets/image/shared/footer/footer-icon-phone.svg" alt="Phone">
-              <p><span class="fw-bold">Llámanos</span> 55 5237 0766</p>
+              <p><span class="fw-bold">Llámanos</span>  55 5237 0766</p>
               <p><span class="fw-bold">Interior de la República</span> 800 018 8000</p>
             </div>
             <div class="footer-contact-items-item">
