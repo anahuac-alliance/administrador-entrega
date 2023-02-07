@@ -9,297 +9,81 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- ============================================================================== -->
   <!-- ============================================================================== -->
-  <title>Administrador</title>
+  <title>Indice de pantallas</title>
+  <style>
+    .template-list {
+      list-style-type: decimal;
+    }
+
+    .template-list li {
+      margin: 10px 0
+    }
+  </style>
 <script defer src="main.js"></script><link href="css/main.css" rel="stylesheet"></head>
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <div class="container header-content">
-          <div class="header-branding">
-            <a class="navbar-brand" href="/">
-              <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza Educativa">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex navbar-search" role="search">
-              <button for="" class="btn btn-search">
-                <img src="assets/image/shared/icons/icon-search.svg" alt="Search icon">
-              </button>
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Cursos
-                  <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Todos los cursos</a></li>
-                  <li><a class="dropdown-item" href="#">Administración Financiera</a></li>
-                  <li><a class="dropdown-item" href="#">Inversión</a></li>
-                  <li><a class="dropdown-item" href="#">BBVA</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Te puede interesar
-                  <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Webinar Laboratorio de Soluciones</a></li>
-                  <li><a class="dropdown-item" href="#">Podcast</a></li>
-                  <li><a class="dropdown-item" href="#">Descargas gratuitas</a></li>
-                  <li><a class="dropdown-item" href="#">El Club El Economista</a></li>
-                </ul>
-              </li>
-              <li class="nav-item btn-login">
-                <button class="btn btn-info btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</button>
-              </li>
-              <li class="nav-item btn-register">
-                <button class="btn btn-primary btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrate</button>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="btn btn-shopping-cart">
-                  <img src="assets/image/shared/icons/icon-shopping-cart.svg" alt="Shopping cart icon">
-                </a>
-              </li>
-              <li class="nav-item dropdown dropdown-user d-none">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="assets/image/shared/icons/icon-user.svg" alt="Profile icon">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Webinar Laboratorio de Soluciones</a></li>
-                  <li><a class="dropdown-item" href="#">Podcast</a></li>
-                  <li><a class="dropdown-item" href="#">Descargas gratuitas</a></li>
-                  <li><a class="dropdown-item" href="#">El Club El Economista</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <section class="container-full-height">
-    <div class="container bg-dark login-panel text-light mt-5">
-      <div class="login-content">
-        <p class="fs-2">Iniciar sesión</p>
-        <p class="text-end">
-          <a class="text-light" href="#">¿Olvidaste tu contraseña?</a>
-        </p>
-        <form>
-          <div class="row">
-            <div class="col-sm-12 col-lg-6 mt-3">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario">
-            </div>
-            <div class="col-sm-12 col-lg-6 mt-3">
-              <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="contraseña">
-            </div>
-          </div>
-          <div class="mt-4 d-flex justify-content-end">
-            <button class="btn btn-primary" type="button">Ingresar</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-content-logo-responsive d-lg-none text-center ">
-        <img src="assets/image/shared/footer/eonomista-logo.svg" alt="El Economista">
-      </div>
-
-      <div class="footer-content-items">
-        <div class="footer-disclamer">
-          <img class="d-none d-lg-block" src="assets/image/shared/footer/eonomista-logo.svg" alt="El Economista">
-          <div class="disclamer mt-4">
-            <p>Copyright © 1988-2015 Periódico Especializado en Economía y Finanzas, S.A. de C.V. All Rights Reserved. Derechos Reservados.</p>
-            <p>Número de reserva al Título en Derechos de Autor 04-2010-062510353600-203.</p>
-            <p>
-              Al visitar esta página, usted está de acuerdo con los términos del servicio
-              <a href="#">Aviso de Privacidad</a>
-              <a href="#">Políticas de cancelación</a>
-            </p>
-          </div>
-        </div>
-        <div class="footer-socials">
-          <p><span class="fw-bold text-warning">Seguir</span> El Economista</p>
-          <div class="footer-socials-items mt-4">
-            <a href="#" class="footer-socials-items-item">
-              <img src="assets/image/shared/icons/icon-twitter.svg" alt="Twitter">
-            </a>
-            <a href="#" class="footer-socials-items-item">
-              <img src="assets/image/shared/icons/icon-facebook.svg" alt="Faceboook">
-            </a>
-            <a href="#" class="footer-socials-items-item">
-              <img src="assets/image/shared/icons/icon-instagram.svg" alt="Instagram">
-            </a>
-            <a href="#" class="footer-socials-items-item">
-              <img src="assets/image/shared/icons/icon-linkedin.svg" alt="LinkedIn">
-            </a>
-            <a href="#" class="footer-socials-items-item">
-              <img src="assets/image/shared/icons/icon-youtube.svg" alt="Youtube">
-            </a>
-            <a href="#" class="footer-socials-items-item">
-              <img src="assets/image/shared/icons/icon-spotify.svg" alt="Spotify">
-            </a>
-          </div>
-        </div>
-        <div class="footer-contact">
-          <p class="fw-bold text-warning">¿Tienes duda? contáctanos</p>
-          <div class="footer-contact-items mt-4">
-            <div class="footer-contact-items-item">
-              <img src="assets/image/shared/footer/footer-icon-phone.svg" alt="Phone">
-              <p><span class="fw-bold">Llámanos</span>  55 5237 0766</p>
-              <p><span class="fw-bold">Interior de la República</span> 800 018 8000</p>
-            </div>
-            <div class="footer-contact-items-item">
-              <img src="assets/image/shared/footer/footer-icon-mail.svg" alt="Mail">
-              <p class="fw-bold">mail</p>
-              <a href="mailto:atencion_clientes@eleconomista.mx">atencion_clientes@eleconomista.mx</a>
-            </div>
-            <div class="footer-contact-items-item">
-              <img src="assets/image/shared/footer/footer-icon-whatsapp.svg" alt="Whatsapp">
-              <p class="fw-bold">Whatsapp</p>
-              <p class="fw-bold">52 55 4524 4274 </p>
-              <p></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ============================================================================== -->
-  <!-- ================================ Whatsapps =================================== -->
-  <button class="btn btn-whatsapp-sticky">
-    <img src="assets/image/shared/icons/icon-whatsapp.svg" alt="">
-  </button>
-  <!-- ============================================================================== -->
-  <!-- ============================================================================== -->
-
-  <!-- ================================================================================== -->
-  <!-- ================================ Modal register in =============================== -->
-  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="ventanaRegistro" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza educativa">
-          <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-            <img src="assets/image/shared/icons/icon-times.svg" alt="">
-          </button>
-        </div>
-        <div class="modal-body modal-register">
-          <div class="modal-register-cover">We need the image</div>
-          <div class="modal-register-content">
-            <p class="fs-3 fw-bold">Regístrate</p>
-            <p><span class="fs-3">Datos el usuario</span> <small class="">(para crear una cuenta)</small> </p>
-            <form>
-              <div class="row mb-3">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Nombre completo" aria-label="Nombre completo">
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col">
-                  <input type="email" class="form-control" placeholder="Email" aria-label="Email">
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col">
-                  <input type="tel" class="form-control" placeholder="Teléfono" aria-label="Teléfono">
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col input-group">
-                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" id="passwordField">
-                  <button class="btn btn-outline-secondary" type="button" id="showPassword">
-                    <img src="assets/image/shared/icons/icon-eye.svg" alt="Show icon">
-                  </button>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col">
-                  <div class="d-grid gap-2">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" disabled>Crear cuenta</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-            <div class="modal-register-content-footer">
-              <p>¿Ya tienes cuenta? <a href="#" class="text-primary">Entrar</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="container">
+    <h1 class="fw-bold fs-1">Índice de pantallas</h1>
+    <hr>
+    <ol class="template-list">
+      <li><a href="listado-diplomados.html" target="_blank">listado-diplomados.html</a></li>
+      <li><a href="agregar-diplomado.html" target="_blank">agregar-diplomado.html</a></li>
+      <li><a href="login.html" target="_blank">login.html</a></li>
+      <li><a href="listado-de-usuarios.html" target="_blank">listado-de-usuarios.html</a></li>
+      <li><a href="notas-de-credito.html" target="_blank">notas-de-credito.html</a></li>
+      <li><a href="facturacion.html" target="_blank">facturacion.html</a></li>
+      <li><a href="listado-expertos.html" target="_blank">listado-expertos.html</a></li>
+      <li><a href="datos-de-facturacion.html" target="_blank">datos-de-facturacion.html</a></li>
+      <li><a href="listado-de-usuarios.html" target="_blank">listado-de-usuarios.html (mismo template no. 4)</a></li>
+      <li><a href="listado-notas-de-credito.html" target="_blank">listado-notas-de-credito.html</a></li>
+      <li><a href="forgot-password.html" target="_blank">forgot-password.html</a></li>
+      <li><a href="agregar-experto.html" target="_blank">agregar-experto.html</a></li>
+      <li><a href="detalle-de-usuario.html" target="_blank">detalle-de-usuario.html</a></li>
+      <li><a href="detalle-nota-credito.html" target="_blank">detalle-nota-credito.html</a></li>
+      <li><a href="datos-de-facturacion.html" target="_blank">datos-de-facturacion.html (ventana cargando)</a></li>
+      <li><a href="agregar-badge.html" target="_blank">agregar-badge.html</a></li>
+      <li><a href="editar-usuario.html" target="_blank">editar-usuario.html</a></li>
+      <li><a href="crear-nota-credito-cobranza.html" target="_blank">crear-nota-credito-cobranza.html</a></li>
+      <li><a href="listado-instituciones.html" target="_blank">listado-instituciones.html</a></li>
+      <li><a href="facturacion-proceso-exitoso.html" target="_blank">facturacion-proceso-exitoso.html</a></li>
+      <li><a href="cursos.html" target="_blank">cursos.html</a></li>
+      <li><a href="listado-de-usuarios.html" target="_blank">listado-de-usuarios.html (Se repite con el no.4)</a></li>
+      <li><a href="agregar-institucion.html" target="_blank">agregar-institucion.html</a></li>
+      <li><a href="facturacion.html" target="_blank">facturacion.html (Se repite con el no. 6)</a></li>
+      <li><a href="listado-tipo-de-cursos.html" target="_blank">listado-tipo-de-cursos.html</a></li>
+      <li><a href="cursos.html" target="_blank">cursos.html (Repetido con el no. 21)</a></li>
+      <li><a href="listado-de-roles.html" target="_blank">listado-de-roles.html</a></li>
+      <li><a href="datos-de-facturacion-2.html" target="_blank">datos-de-facturacion.html-2 (Repetido con el no. 8)</a></li>
+      <li><a href="detalle-curso.html" target="_blank">detalle-curso.html</a></li>
+      <li><a href="agregar-rol.html" target="_blank">agregar-rol.html</a></li>
+      <li><a href="listado-tipo-de-cursos.html" target="_blank">listado-tipo-de-cursos.html (Repetido con el no. 25)</a></li>
+      <li><a href="datos-de-facturacion-2.html" target="_blank">datos-de-facturacion-2.html (Repetido con el no. 28)</a></li>
+      <li><a href="recibos.html" target="_blank">recibos.html</a></li>
+      <li><a href="agregar-tipo-de-curso.html" target="_blank">agregar-tipo-de-curso.html</a></li>
+      <li><a href="listado-de-permisos.html" target="_blank">listado-de-permisos.html</a></li>
+      <li><a href="agregar-permiso.html" target="_blank">agregar-permiso.html</a></li>
+      <li><a href="recibos.html" target="_blank">recibos.html (Repetido con el no. 33)</a></li>
+      <li><a href="listado-de-cursos.html" target="_blank">listado-de-cursos.html</a></li>
+      <li><a href="facturacion-proceso-exitoso.html" target="_blank">facturacion-proceso-exitoso.html (Repetido con el no. 20)</a></li>
+      <li><a href="listado-de-usuarios-2.html" target="_blank">listado-de-usuarios-2.html</a></li>
+      <li><a href="listado-de-cursos.html" target="_blank">listado-de-cursos.html (Repetido con el no. 38)</a></li>
+      <li><a href="detalle-recibo.html" target="_blank">detalle-recibo.html</a></li>
+      <li><a href="listado-de-usuarios-2.html" target="_blank">listado-de-usuarios-2.html (Repetido con el no. 40)</a></li>
+      <li><a href="agregar-curso.html" target="_blank">agregar-curso.html</a></li>
+      <li><a href="crear-factura.html" target="_blank">crear-factura.html</a></li>
+      <li><a href="agregar-usuarios.html" target="_blank">agregar-usuarios.html</a></li>
+      <li><a href="facturas.html" target="_blank">facturas.html</a></li>
+      <li><a href="registrar-pago.html" target="_blank">registrar-pago.html</a></li>
+      <li><a href="listado-series-fiscales.html" target="_blank">listado-series-fiscales.html</a></li>
+      <li><a href="facturas.html" target="_blank">facturas.html (Repetido con no. 47)</a></li>
+      <li><a href="listado-series-fiscales.html" target="_blank">listado-series-fiscales.html (Repetido con el no. 49)</a></li>
+      <li class="text-danger">Pantalla nueva (TEMA)</li>
+      <li><a href="detalle-de-factura.html" target="_blank">detalle-de-factura.html</a></li>
+      <li><a href="agregar-series-fiscales.html" target="_blank">agregar-series-fiscales.html</a></li>
+      <li><a href="listado-de-alianzas.html" target="_blank">listado-de-alianzas.html</a></li>
+      <li><a href="agregar-alianzas.html" target="_blank">agregar-alianzas.html</a></li>
+    </ol>
   </div>
-  <!-- ============================================================================== -->
-  <!-- ============================================================================== -->
 
-  <!-- ============================================================================ -->
-  <!-- ================================ Modal login =============================== -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="ventanaLogin" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza Educativa">
-          <button type="button" class="btn btn-close-modal text-light" data-bs-dismiss="modal" aria-label="Close">
-            <img src="assets/image/shared/icons/icon-times.svg" alt="">
-          </button>
-        </div>
-        <div class="modal-body">
-          <p class="fs-2">Iniciar sesión</p>
-          <a href="#" class="d-block text-end"><small>¿Olvidaste tu contraseña?</small></a>
-          <form>
-            <div class="row">
-              <div class="col-sm-12 col-lg-6 mt-3">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="col-sm-12 col-lg-6 mt-3">
-                <div class="col input-group">
-                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" id="passwordField">
-                  <button class="btn btn-outline-secondary" type="button" id="showPassword">
-                    <img src="assets/image/shared/icons/icon-eye.svg" alt="Show icon">
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="d-grid gap-2 mt-4">
-              <button class="btn btn-primary" type="button" disabled>Entra</button>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer justify-content-center">
-          <p class="text-center">¿No tienes cuenta? <a href="#" class="link">Crear cuenta</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ============================================================================== -->
-  <!-- ============================================================================== -->
-
-  <!-- ================================================================================ -->
-  <!-- ============================= Popper 2.11 ====================================== -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <!-- ================================================================================ -->
-  <!-- ================================================================================ -->
-
-  <!-- ================================================================================ -->
-  <!-- =============================Bootstarp 5.2 ===================================== -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-  <!-- ================================================================================ -->
-  <!-- ================================================================================ -->
 </body>
 </html>

@@ -10859,8 +10859,13 @@ body {
   font-size: var(--ae-body-font-size);
   font-weight: var(--ae-body-font-weight);
   line-height: var(--ae-body-line-height);
-  padding-top: 65px;
+  padding: 65px 0 0 0;
   box-sizing: border-box;
+}
+@media (min-width: 1200px) {
+  body {
+    padding: 65px 0 321px 0;
+  }
 }
 
 .link {
@@ -10873,6 +10878,10 @@ body {
   --bs-btn-font-weight: 700;
   --bs-btn-font-size: 12px;
   text-transform: uppercase;
+}
+
+.btn-custom {
+  min-width: 120px;
 }
 
 .btn-full-width {
@@ -11109,6 +11118,9 @@ body {
     padding: 0px 10px;
   }
 }
+.navbar-collapse .navbar-nav .nav-item {
+  width: 100%;
+}
 .navbar-collapse .navbar-nav .nav-item .nav-link-icon {
   position: relative;
   overflow: hidden;
@@ -11268,6 +11280,14 @@ input.form-control[type=password] + button img {
   box-sizing: border-box;
   background-color: var(--bs-dark);
   color: var(--bs-white);
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+@media (min-width: 1200px) {
+  .footer {
+    position: fixed;
+  }
 }
 .footer-content-items {
   display: flex;
@@ -11522,9 +11542,24 @@ input.form-control[type=password] + button img {
 .table tr td {
   padding: 10px;
   box-sizing: border-box;
+  min-width: 150px;
+}
+@media (min-width: 992px) {
+  .table tr td {
+    min-width: initial;
+  }
 }
 .table tr td.detail {
   padding: 10px 0;
+}
+
+.table-responsive .table tr td {
+  min-width: 150px;
+}
+@media (min-width: 992px) {
+  .table-responsive .table tr td {
+    min-width: initial;
+  }
 }
 
 /* Detalle del usuario */
@@ -11539,7 +11574,12 @@ input.form-control[type=password] + button img {
   }
 }
 .user-detail-heading p {
-  width: 30%;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .user-detail-heading p {
+    width: 40%;
+  }
 }
 
 .user-detail-nav {
@@ -11557,7 +11597,7 @@ input.form-control[type=password] + button img {
   justify-content: flex-start;
   flex-direction: column;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .user-detail-nav-items {
     flex-direction: row;
     align-items: center;
@@ -11568,8 +11608,10 @@ input.form-control[type=password] + button img {
     justify-content: flex-end;
   }
 }
-.user-detail-nav-items-item:first-of-type a {
-  padding: 0px 15px 0px 0px;
+@media (min-width: 992px) {
+  .user-detail-nav-items-item:first-of-type a {
+    padding: 0px 15px 0px 0px;
+  }
 }
 .user-detail-nav-items-item p {
   padding: 0px 10px 0px 10px;
@@ -11586,12 +11628,14 @@ input.form-control[type=password] + button img {
   padding: 0px 10px 0px 10px;
   box-sizing: border-box;
   margin-top: 10px;
-  border-right: 1px solid var(--bs-primary);
+  border-left: 1px solid var(--bs-primary);
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .user-detail-nav-items-item a {
     padding: 0px 15px 0px 15px;
     margin-top: 0px;
+    border-left: 0;
+    border-right: 1px solid var(--bs-primary);
   }
 }
 @media (min-width: 992px) {

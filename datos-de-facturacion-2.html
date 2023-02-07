@@ -76,120 +76,77 @@
     </nav>
   </header>
 
-
-  <!-- ============================================================================== -->
-  <!-- Dropdowns navbar -->
-  <section>
-    <div class="container">
-      <div class="row dropdown-nav">
-        <div class="col-sm-12 col-lg-3 mt-3">
-          <div class="btn-group">
-            <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              usuarios
-              <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
-            </button>
-            <ul class="dropdown-menu">
-              <!-- Items para este dropdown -->
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-12 col-lg-3 mt-3">
-          <div class="btn-group">
-            <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              cobranza
-              <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"><span>Recibo</span></a></li>
-              <li><a class="dropdown-item" href="#"><span>Facturas</span></a></li>
-              <li><a class="dropdown-item" href="#"><span>Notas de crédito</span></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-12 col-lg-3 mt-3">
-          <div class="btn-group">
-            <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              atención a clientes
-              <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"><span>Consulta</span></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-12 col-lg-3 mt-3">
-          <div class="btn-group">
-            <button class="btn btn-dropdown btn-lg dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              configuración
-              <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="icon">
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item text-capitalize" href="#"><span>Roles</span></a></li>
-              <li><a class="dropdown-item text-capitalize" href="#"><span>Permisos</span></a></li>
-              <li><a class="dropdown-item text-capitalize" href="#"><span>Usuarios</span></a></li>
-              <li><a class="dropdown-item text-capitalize" href="#"><span>Series fiscales</span></a></li>
-              <li><a class="dropdown-item text-capitalize" href="#"><span>Alianzas</span></a></li>
-              <li><a class="dropdown-item text-capitalize" href="#"><span>diplomado</span></a></li>
-              <li><a class="dropdown-item text-capitalize" href="#"><span>experto</span></a></li>
-              <li><a class="dropdown-item text-capitalize" href="#"><span>institución</span></a></li>
-              <li><a class="dropdown-item text-capitalize" href="#"><span>tipo de curso</span></a></li>
-              <li><a class="dropdown-item text-capitalize" href="#"><span>cursos</span></a></li>
-              <li><a class="dropdown-item text-capitalize" href="#"><span>Badge</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ============================================================================== -->
-  <!-- ============================================================================== -->
-
   <!-- ============================================================================== -->
   <!-- Panel -->
-  <section>
+  <section class="mt-5">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="card panel-card mb-5 shadow-sm">
+          <div class="card shadow-sm panel-card mb-5">
             <div class="card-header bg-dark">
-              <p class="text-primary text-uppercase fw-bold">listado de expertos</p>
+              <p class="text-primary text-uppercase fw-bold text-center fs-6">facturación</p>
             </div>
             <div class="card-body">
-              <form action="">
-                <div class="d-flex justify-content-end mt-3">
-                  <button class="btn btn-primary btn-custom" type="button">agregar</button>
+              <p class="fw-bold text-center mt-3 mb-3">Emisión de comprobantes fiscales digitales</p>
+              <p class="text-primary fs-6 text-uppercase fw-bold mb-3">Datos de facturación</p>
+              <p class="text-center">Los campos resaltados son obligatorios.</p>
+              <form action="" class="mb-5">
+
+                <div class="form-group mb-4">
+                  <label class="text-capitalize" for="">RFC</label>
+                  <input type="text" class="form-control">
                 </div>
+
+                <div class="form-group mb-4">
+                  <label class="text-capitalize" for="">Nombre/Razón Social</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group mb-4">
+                  <label class="text-capitalize" for="">Régimen Fiscal</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group mb-4">
+                  <label class="text-capitalize" for="">Uso de CFDI</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Elige una opción</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <div class="form-group mb-4">
+                  <label class="text-capitalize" for="">Código Postal</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group mb-4">
+                  <label class="text-capitalize" for="">Correo para envíos de factura</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group mb-4">
+                  <label class="text-capitalize" for="">importe</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button class="btn btn-primary">Emitir factura</button>
+                </div>
+
               </form>
+              <div class="mb-3 text-center">
+                <p class="mb-3 fw-bold text-uppercase">*importante</p>
+                <p>El reenvío de tu factura se podrá solicitar hasta dos ocasiones.</p>
+              </div>
+              <br />
+              <button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#loadingModal">Lanzar modal</button>
+              <p class="text-danger">Remover el botón de la modal y este texto.</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- ============================================================================== -->
-  <!-- ============================================================================== -->
-
-  <!-- ============================================================================== -->
-  <!-- Table -->
-  <section>
-    <div class="container">
-      <div class="table-responsive shadow-sm">
-        <table class="table">
-          <thead class="table-dark">
-            <tr class="text-capitalize">
-              <th></th>
-              <th scope="col">Nombre completo</th>
-              <th scope="col">estatus</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="text-capitalize">
-              <td><a href="#" class="text-bg-warning ps-3 pe-3 pt-1 pb-1 me-2 text-capitalize">Editar</a></td>
-              <td><span>Pedro López Carrión</span></td>
-              <td><span>Activo</span></td>
-            </tr>
-          </tbody>
-        </table>
       </div>
     </div>
   </section>
@@ -369,6 +326,24 @@
         </div>
         <div class="modal-footer justify-content-center">
           <p class="text-center">¿No tienes cuenta? <a href="#" class="link">Crear cuenta</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- ================================ Modal Loading =============================== -->
+  <div class="modal fade" id="loadingModal" tabindex="-1" aria-labelledby="ventanaLoading" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered mdoal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-light text-dark d-flex justify-content-center">
+          <p class="text-primary text-uppercase fs-3 fw-bold mt-5">cargando</p>
+        </div>
+        <div class="modal-body text-primary text-center py-5">
+          <p>Generando su factura</p>
+          <p>No presione el boton <span class="text-uppercase">atrás</span>, o alguna tecla de su computadora.</p>
         </div>
       </div>
     </div>
